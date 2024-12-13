@@ -5,16 +5,16 @@ import "./style.css";
 window.onload = function() {
   //write your code here
   let who = ["El vehiculo", "Mi amigo", "El mecanico", "Mi padre"];
-  let pronouns = ["ha", "se ha", "esta", "roto"];
-  let action = ["perdido", "usado", "caído", "roto"];
-  let pronouns2 = ["ha", "ha visto", "el", "la"];
-  let object = ["llave", "telefono", "mando", "cartera"];
+  let pronouns = [" ha", " se ha", " esta", " roto"];
+  let action = [" perdido", " usado", " caído", " roto"];
+  let pronouns2 = [" del", " ha visto", " el", " la"];
+  let object = [" llave", " telefono", " mando", " cartera"];
   let when = [
-    "antes del trabajo",
-    "cuando estaba durmiendo",
-    "mientras hacía ejercicio",
-    "durante el almuerzo",
-    "mientras estaba jugando"
+    " antes del trabajo",
+    " cuando estaba durmiendo",
+    " mientras hacía ejercicio",
+    " durante el almuerzo",
+    " mientras estaba jugando"
   ];
 
   let rdm1 = Math.floor(Math.random() * who.length);
@@ -26,9 +26,9 @@ window.onload = function() {
 
   document.querySelector("#excuse").innerHTML =
     who[rdm1] +
-    action[rdm2] +
-    when[rdm3] +
-    when[rdm4] +
-    when[rdm5] +
+    pronouns[rdm2] +
+    action[rdm3] +
+    pronouns2[rdm4] +
+    object[rdm5] +
     when[rdm6];
 };
